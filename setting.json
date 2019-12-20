@@ -1,0 +1,55 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  // 字体大小
+  "editor.fontSize": 16,
+  // 缩进
+  "editor.tabSize": 2,
+  // 自动补全
+  "emmet.triggerExpansionOnTab": true,
+  // ----------------------------------------------------------
+  "window.zoomLevel": 1,
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.renderIndentGuides": false,
+  "files.autoSave": "off",
+  "less.compile": {
+    "out": "../css/"
+  },
+  "px2rem.rootFontSize": 50,
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Dracula",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  //---------------------------------------------------------------
+  //eslint 插件的配置
+  //配置保存时, 自动修复格式bug
+  "eslint.autoFixOnSave": true,
+  //配置对于vue的处理
+  // 配置eslint生效的文件扩展，包括vue
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".vue"
+    ]
+  },
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    "html",
+    "vue"
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vsicons.dontShowNewVersionMessage": true
+}
