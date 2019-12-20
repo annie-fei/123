@@ -53,3 +53,58 @@
   },
   "vsicons.dontShowNewVersionMessage": true
 }
+
+
+
+
+
+
+<template>
+  <md-card>
+    <md-card-media>
+      <!-- swiper -->
+      <swiper :options="swiperOption">
+        <swiper-slide v-for="(item,index) in swiperList":key="index">{{item}}</swiper-slide>
+      </swiper>
+    </md-card-media>
+  </md-card>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      swiperList: ['车位1', '车位2', '车位3', '车位4', '车位5', '车位6', '车位7', '车位8', '车位9', '车位10'
+      ],
+      swiperOption: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+        // init: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        // 适配不同【屏幕
+        breakpoints: {
+          // 1024: {
+          //   slidesPerView: 4,
+          //   spaceBetween: 40
+          // },
+          // 768: {
+          //   slidesPerView: 3,
+          //   spaceBetween: 30
+          // },
+          // 640: {
+          //   slidesPerView: 2,
+          //   spaceBetween: 20
+          // },
+          // 320: {
+          //   slidesPerView: 1,
+          //   spaceBetween: 10
+          // }
+        }
+      }
+    }
+  }
+}
+</script>
